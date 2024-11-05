@@ -11,8 +11,8 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path='/' element={<BoxSplit />}/>
-          <Route path='/element-transfer' element={<ElementTransfer />}/>
+          <Route path='/' element={<ElementTransfer />}/>
+          <Route path='/box-split' element={<BoxSplit />}/>
           <Route path='game' element={<Game />}/>
           <Route path='infinite-scroll' element={<InfiniteScroll />}/>
           <Route path='nested-list' element={<NestedList />}/>
