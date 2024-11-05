@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.sub-box {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
