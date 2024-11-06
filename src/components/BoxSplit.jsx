@@ -51,7 +51,7 @@ function BoxSplit() {
   return (
     <div className="App">
       <h1>Box Split</h1>
-      <Box size={200} level={0} />
+      <Box size={300} level={0} />
     </div>
   )
 }

@@ -1,45 +1,84 @@
 .App {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Responsive Path Bar */
+.path-bar {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Responsive Nested List Container */
+.nested-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; /* Constrain the maximum width */
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/* List and List Item Styling */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+/* Responsive Back Button */
+.back-button {
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* List Item Flex Container */
+li div {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Responsive Typography and Padding */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
   }
-  
+
   .path-bar {
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1em;
   }
-  
+
   .nested-list {
-    border: 1px solid #ccc;
-    padding: 10px;
-    max-width: 400px;
-    margin: auto;
+    padding: 8px;
   }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  li {
-    padding: 5px 0;
-  }
-  
+
   .back-button {
-    margin-bottom: 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 6px 8px;
+    font-size: 0.85em;
   }
-  
-  .back-button:hover {
-    background-color: #0056b3;
+
+  li {
+    padding: 4px 0;
   }
-  
-  li div {
-    display: inline-flex;
-    align-items: center;
-  }
-  
+}
