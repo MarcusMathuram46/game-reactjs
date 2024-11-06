@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Responsive Path Bar */
+/* Path Bar */
 .path-bar {
   font-weight: bold;
   margin-bottom: 10px;
@@ -15,15 +15,17 @@
   text-align: center;
 }
 
-/* Responsive Nested List Container */
+/* Fixed Nested List Container with Responsive Adjustments */
 .nested-list {
   border: 1px solid #ccc;
   padding: 10px;
   width: 100%;
-  max-width: 400px; /* Constrain the maximum width */
+  max-width: 500px; /* Keep max width fixed */
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 8px;
+  height: 50vh; /* Fixed height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 /* List and List Item Styling */
@@ -36,7 +38,7 @@ li {
   padding: 5px 0;
 }
 
-/* Responsive Back Button */
+/* Back Button Styling */
 .back-button {
   margin-bottom: 10px;
   background-color: #007bff;
@@ -59,7 +61,7 @@ li div {
   align-items: center;
 }
 
-/* Responsive Typography and Padding */
+/* Responsive Typography and Padding for Smaller Screens */
 @media (max-width: 600px) {
   .App {
     padding: 15px;
@@ -71,6 +73,8 @@ li div {
 
   .nested-list {
     padding: 8px;
+    max-width: 100%; /* Ensure it takes full width on smaller screens */
+    height: auto; /* Allow height to adjust for smaller content */
   }
 
   .back-button {
@@ -80,5 +84,10 @@ li div {
 
   li {
     padding: 4px 0;
+  }
+
+  /* Ensure proper text wrapping and layout */
+  ul {
+    padding-left: 15px; /* Less indentation */
   }
 }
