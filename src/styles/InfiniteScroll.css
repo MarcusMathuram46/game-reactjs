@@ -1,6 +1,6 @@
 .infinite-scroll {
   max-width: 600px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
   scroll-behavior: smooth; /* Smooth scrolling */
   overflow-y: auto; /* Enables vertical scroll */
